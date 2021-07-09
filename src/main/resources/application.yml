@@ -4,3 +4,6 @@ spring:
   config:
 #     import: optional:configserver:https://configserver-jabmm.azurewebsites.net
      import: optional:configserver:http://localhost:8888
+        
+     
+     

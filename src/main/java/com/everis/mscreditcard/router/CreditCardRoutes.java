@@ -14,8 +14,9 @@ public class CreditCardRoutes {
     @Bean
     public RouterFunction<ServerResponse> routes(CreditCardHandler handler){
         return RouterFunctions.route().path(
-        "/creditCard", builder -> builder
+        "/credit-card/creditCard", builder -> builder
             .GET("/{numberCreditCard}", handler::findByNumberCreditCard)
-    ).build();
+            .POST("/create", handler::createCreditCard)
+        	).build();
     }
 }

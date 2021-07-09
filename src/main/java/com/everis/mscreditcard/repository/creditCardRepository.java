@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
 import reactor.core.publisher.Mono;
 
-public interface creditCardRepository extends ReactiveMongoRepository<CreditCard,String>{
+public interface CreditCardRepository extends ReactiveMongoRepository<CreditCard,String>{
     public Mono<CreditCard> findByNumberCreditCard(String numberCreditCard);
 }
